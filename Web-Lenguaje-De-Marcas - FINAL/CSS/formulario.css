@@ -1,0 +1,276 @@
+/* Estilo del formulario de opciones */
+body {
+    background-color: #3B3936;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Estilos del Header (sin botón de tema) */
+#header {
+    display: flex;
+    justify-content: space-between; /* Logo a la izquierda, nav a la derecha */
+    align-items: center; /* Centrado vertical */
+    padding: 10px 20px;
+    background-color: black;
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Alinea logo y texto */
+    gap: 10px; /* Espacio entre logo y texto */
+}
+
+.logo img {
+    height: 50px;
+    width: auto; /* Evita deformación */
+}
+
+.logo .header {
+    color: #BD2A2E;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Espacio entre enlaces */
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #BD2A2E;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.nav ul li a:hover {
+    color: white;
+}   
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.div-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-section {
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 800px;
+}
+
+h2 {
+    color: #FF4500;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #BD2A2E;
+}
+
+input, select, button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #BD2A2E;
+    border-radius: 5px;
+    background-color: #3B3936;
+    color: white;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #FF4500;
+    box-shadow: 0 0 5px #FF4500;
+}
+
+#options-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select, button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #BD2A2E;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #FF4500;
+}
+.nav ul li {
+    position: relative;
+}
+
+.nav ul li .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: black;
+    border: 2px solid #BD2A2E;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.nav ul li .submenu li {
+    margin: 5px 0;
+}
+
+.nav ul li .submenu a {
+    color: #BD2A2E;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.nav ul li .submenu a:hover {
+    color: white;
+}
+
+/* Mostrar el submenú al hacer hover o clic */
+.nav ul li:hover .submenu,
+.nav ul li:focus-within .submenu {
+    display: block;
+}
+
+.nav ul li {
+    position: relative;
+}
+
+.nav ul li .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: black;
+    border: 2px solid #BD2A2E;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.nav ul li .submenu li {
+    margin: 5px 0;
+}
+
+.nav ul li .submenu a {
+    color: #BD2A2E;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.nav ul li .submenu a:hover {
+    color: white;
+}
+
+/* Mostrar el submenú al hacer hover o clic */
+.nav ul li:hover .submenu,
+.nav ul li:focus-within .submenu {
+    display: block;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    border-top: 3px solid #BD2A2E;
+}
+
+footer a {
+    text-decoration: none;
+    color: #BD2A2E;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-logo {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-address,
+.footer-contact {
+    margin: 5px 0;
+    font-size: 14px;
+    color: white;
+}
+
+.footer-social {
+    margin: 10px 0;
+}
+
+.footer-social a {
+    margin: 0 10px;
+    color: #BD2A2E;
+}
+
+.footer-social a:hover {
+    color: white;
+}
+
+.footer-links {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.footer-links a {
+    margin: 0 15px;
+    color: #BD2A2E;
+}
+
+.footer-links a:hover {
+    color: white; /* Efecto al pasar el ratón */
+}

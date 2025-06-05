@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario de Opciones</title>
+        <link rel="stylesheet" href="CSS/formulario.css">
+    </head>
+    <body>
+        <header id="header">
+    <div class="logo">
+        <img src="img/logo.png" alt="Logo" />
+        <p class="header">DAW eSports</p>
+    </div>
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <a href="#" class="toggleSubmenu">LOL</a>
+                <ul class="submenu">
+                    <li><a href="article_LOL.html">Información</a></li>
+                    <li><a href="#">Campeones</a></li>
+                    <li><a href="#">Guías</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="toggleSubmenu">RL</a>
+                <ul class="submenu">
+                    <li><a href="article_RL.html">Información</a></li>
+                    <li><a href="#">Coches</a></li>
+                    <li><a href="#">Modos de juego</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="toggleSubmenu">VAL</a>
+                <ul class="submenu">
+                    <li><a href="article_VAL.html">Información</a></li>
+                    <li><a href="#">Agentes</a></li>
+                    <li><a href="#">Mapas</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="toggleSubmenu">Formularios</a>
+                <ul class="submenu">
+                    <li><a href="formulario.html">Contacto</a></li>
+                    <li><a href="#">Suscripción</a></li>
+                    <li><a href="#">Feedback</a></li>
+                </ul>
+            </li>
+            <li><a href="juegos.html">Tienda</a></li>
+        </ul>
+    </nav>
+</header>
+        <main class="div-form">
+            <section class="form-section">
+                <h2>Formulario de Contacto</h2>
+                <form id="contact-form" action="#" method="POST">
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre">
+                    </div>
+                    <div>
+                        <label for="correo">Correo electrónico:</label>
+                        <input type="text" id="correo" name="correo">
+                    </div>
+                    <div>
+                        <label for="mensaje">Mensaje:</label><br>
+                        <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+                    </div>    
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+
+            <section class="form-section">
+                <h2>Suscríbete a nuestras novedades</h2>
+                <form id="subscribe-form" action="#" method="POST">
+                    <div>
+                        <label for="email">Correo electrónico:</label>
+                        <input type="text" id="email" name="email">
+                    </div>
+                    <div>
+                        <label for="name">Nombre completo:</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div>
+                        <label for="preferences">Elige tu preferencia:</label>
+                        <select id="preferences" name="preferences">
+                            <option value="">Selecciona una opción</option>
+                            <option value="lol">League of Legends</option>
+                            <option value="valorant">Valorant</option>
+                            <option value="rocket-league">Rocket League</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="age">Edad:</label>
+                        <input type="text" id="age" name="age">
+                    </div>
+                    <div>
+                        <label for="gender">Género:</label>
+                        <select id="gender" name="gender">
+                            <option value="">Selecciona tu género</option>
+                            <option value="male">Masculino</option>
+                            <option value="female">Femenino</option>
+                            <option value="other">Otro</option>
+                            <option value="prefer-not">Prefiero no decirlo</option>
+                        </select>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+
+            <section class="form-section">
+                <h2>Comentarios</h2>
+                <form id="comments-form" action="#" method="POST">
+                    <div>
+                        <label for="usuario">Usuario:</label>
+                        <input type="text" id="usuario" name="usuario" required>
+                    </div>
+                    <div>
+                        <label for="comentario">Comentario:</label><br>
+                        <textarea id="comentario" name="comentario" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Publicar</button>
+                    <div>
+                        <button type="button" id="toggle-comments">Mostrar/Ocultar Comentarios</button>
+                        <div id="lista-comentarios" style="display: none; margin-top: 10px;"></div>
+                    </div>
+                </form>
+            </section>
+        </main>
+        
+        <footer>
+        <div class="container">
+            <p class="footer-logo">DAWeSPORTS</p>
+            <p class="footer-address">Carrer de Caracas, 6, Llevant, 07007
+                Palma, Illes Balears</p>
+            <p class="footer-contact">
+                Teléfono: <a>610437607</a> |
+                Correo: <a>DAWeSPORTS@hotmail.com</a>
+            </p>
+            <div class="footer-social">
+                <a>Facebook</a> |
+                <a>Instagram</a> |
+                <a>LinkedIn</a>
+            </div>
+            <div class="footer-links">
+                <a>Política de privacidad</a> |
+                <a>Términos y condiciones</a> |
+                <a>Aviso legal</a>
+            </div>
+        </div>
+    </footer>
+        
+        <script src="script-formularios.js"></script>
+    </body>
+</html>

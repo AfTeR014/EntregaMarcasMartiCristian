@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Juegos - DAWeSPORTS</title>
+    <link rel="stylesheet" href="CSS/juegos.css">
+</head>
+<body>
+    <header id="header">
+    <div class="logo">
+        <img src="img/logo.png" alt="Logo" />
+        <p class="header">DAW eSports</p>
+    </div>
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <a href="#" class="toggleSubmenu">LOL</a>
+                <ul class="submenu">
+                    <li><a href="article_LOL.html">Información</a></li>
+                    <li><a href="#">Campeones</a></li>
+                    <li><a href="#">Guías</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="toggleSubmenu">RL</a>
+                <ul class="submenu">
+                    <li><a href="article_RL.html">Información</a></li>
+                    <li><a href="#">Coches</a></li>
+                    <li><a href="#">Modos de juego</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="toggleSubmenu">VAL</a>
+                <ul class="submenu">
+                    <li><a href="article_VAL.html">Información</a></li>
+                    <li><a href="#">Agentes</a></li>
+                    <li><a href="#">Mapas</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="toggleSubmenu">Formularios</a>
+                <ul class="submenu">
+                    <li><a href="formulario.html">Contacto</a></li>
+                    <li><a href="#">Suscripción</a></li>
+                    <li><a href="#">Feedback</a></li>
+                </ul>
+            </li>
+            <li><a href="juegos.html">Tienda</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <section class="section">
+        <div class="filtros-container">
+            <h1>Lista de Juegos</h1>
+            <div id="filtros">
+                <label for="filtroPrecio">Filtrar por precio máximo:</label>
+                <input type="number" id="filtroPrecio" placeholder="Ingresa un precio máximo">
+                <button onclick="filtrarPorPrecio()">Filtrar</button>
+            </div>
+            <div id="ordenar">
+                <button onclick="ordenarPorNombre()">Ordenar por nombre</button>
+                <button onclick="ordenarPorPrecio()">Ordenar por precio</button>
+            </div>
+        </div>
+        <div id="lista-juegos" class="lista-juegos"></div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p class="footer-logo">DAWeSPORTS</p>
+            <p class="footer-address">Carrer de Caracas, 6, Llevant, 07007
+                Palma, Illes Balears</p>
+            <p class="footer-contact">
+                Teléfono: <a>610437607</a> |
+                Correo: <a>DAWeSPORTS@hotmail.com</a>
+            </p>
+            <div class="footer-social">
+                <a>Facebook</a> |
+                <a>Instagram</a> |
+                <a>LinkedIn</a>
+            </div>
+            <div class="footer-links">
+                <a>Política de privacidad</a> |
+                <a>Términos y condiciones</a> |
+                <a>Aviso legal</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script-juegos.js"></script>
+</body>
+</html>

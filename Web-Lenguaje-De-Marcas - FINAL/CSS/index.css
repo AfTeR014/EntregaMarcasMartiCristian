@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+body, body * {
+    color: inherit; /* Esto permite que los elementos hereden el color del tema */
+}
+
+/* Modo oscuro (predeterminado) */
+body {
+    background-color: #121212;
+    color: white;
+}
+
+/* Modo claro */
+body.light-mode {
+    background-color: #f5f5f5;
+    color: #333;
+}
+body.light-mode #theme-toggle {
+    background-color: #BD2A2E;
+    color: rgb(0, 0, 0);
+}
+/* Heredar colores en modo claro */
+body.light-mode a,
+body.light-mode .nav ul li a,
+body.light-mode .ver-mas,
+body.light-mode footer a {
+    color: #333;
+}
+
+body.light-mode .nav ul li a:hover,
+body.light-mode footer a:hover {
+    color: #BD2A2E;
+}
+
+/* Contenedores y texto */
+body.light-mode .container {
+    background-color: #ffffff;
+}
+
+body.light-mode .txt p {
+    color: #333;
+}
+
+/* Botón "Ver más" en modo claro */
+body.light-mode .ver-mas {
+    background-color: #BD2A2E;
+    color: rgb(255, 255, 255);
+}
+
+body.light-mode .ver-mas:hover {
+    background-color: #FF4500;
+}
+/* Estilos para el botón */
+#theme-toggle {
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #BD2A2E;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    margin-left: 750px;
+    margin-top: 1px;
+}
+
+
+/* Header */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: black;
+    color: #BD2A2E;
+}
+/* Header en modo claro */
+body.light-mode #header {
+    background-color: #e1d4d4;
+    border-bottom: 2px solid #BD2A2E; /* Línea decorativa */
+}
+
+body.light-mode .nav ul li a {
+    color: #333;
+}
+
+body.light-mode .nav ul li a:hover {
+    color: #BD2A2E;
+}
+
+body.light-mode .slider {
+    box-shadow: none;
+}
+
+body.light-mode footer {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.light-mode footer a {
+    color: #BD2A2E;
+}
+
+body.light-mode footer a:hover {
+    color: #BD2A2E;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #BD2A2E;
+}
+
+.nav ul li a:hover {
+    color: white;
+}
+
+/* Secciones principales */
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    border: none;
+    border-radius: 0px;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: none;
+}
+
+.section .txt {
+    width: 50%;
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Botón Ver más */
+
+.ver-mas {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: #BD2A2E;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.ver-mas:hover {
+    background-color: #FF4500;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    border-top: 3px solid #BD2A2E;
+}
+
+footer a {
+    text-decoration: none;
+    color: #BD2A2E;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-logo {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-address,
+.footer-contact {
+    margin: 5px 0;
+}
+
+.footer-social {
+    margin: 10px 0;
+}
+
+.footer-social a {
+    margin: 0 10px;
+}
+
+.footer-social a:hover {
+    color: white;
+}
+
+/* Estilos para el formulario de contacto */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: black;
+    border-radius: 10px;
+    border: 5px solid #BD2A2E;
+}
+
+.contact-form label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #BD2A2E;
+    border-radius: 5px;
+    background-color: #4a4a4a;
+    color: white;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #BD2A2E;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #FF4500;
+    transform: scale(1.05);
+}
+
+/* Responsividad */
+@media (max-width: 900px) {
+    .section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section img {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .section .txt {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact-form {
+        width: 90%;
+        padding: 15px;
+    }
+}
+
+/* Estilos para los submenús */
+.nav ul li {
+    position: relative;
+}
+
+.nav ul li .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: black;
+    border: 2px solid #BD2A2E;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.nav ul li .submenu li {
+    margin: 5px 0;
+}
+
+.nav ul li .submenu a {
+    color: #BD2A2E;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.nav ul li .submenu a:hover {
+    color: white;
+}
+
+/* Mostrar el submenú al hacer hover o clic */
+.nav ul li:hover .submenu,
+.nav ul li:focus-within .submenu {
+    display: block;
+}
+
+/*sliders*/
+.container{
+    padding: 30px;
+}
+.slider-wrapper{
+    position: relative;
+    min-width: 786px;
+    margin: 0 auto;
+}
+.slider{
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5px 3px -1px hsla(0,0%,0%,0.25);
+    border-radius: 10px;
+    margin-bottom: -80px;
+}
+.img_index{
+    flex: 1 0 100%;
+    width: 2px;
+    height: 700px;
+}
+.slider-nav{
+    display:flex;
+    column-gap: 16px;
+    position:absolute;
+    bottom: auto;
+    top: 670px;
+    left: 675px;
+    translate: translateX(-50%);
+    z-index: 1;
+}
+.slider-button{
+    width: 10px;
+    height: 10px;
+    border-radius: 90%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+    border: none;
+    cursor: pointer;
+}
+.slider-button:hover{
+    opacity: 1;
+}
